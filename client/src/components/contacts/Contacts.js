@@ -18,7 +18,7 @@ const Contact = () => {
         {contactArray.map((contact) => {
           const itemRef = React.createRef();
           return (
-            <CSSTransition nodeRef={itemRef} key={contact.id} classNames='item' timeout={400}>
+            <CSSTransition nodeRef={itemRef} key={contact._id} classNames='item' timeout={400}>
               <div ref={itemRef}>
                 <ContactItem contact={contact} />
               </div>
